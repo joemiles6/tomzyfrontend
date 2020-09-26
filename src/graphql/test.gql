@@ -1,0 +1,8 @@
+  mutation Test($explanation: String!, $fakeId: Int){
+    Task(task: {explanation: $explanation, fakeId: $fakeId}) {
+      id
+      explanation
+      createdAt
+      fakeId
+    }
+  }

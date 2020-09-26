@@ -1,0 +1,6 @@
+mutation createAccount($email: String!, $password: String!, $username: String!, $firstname: String!, $lastname: String){
+  postLog(user:{email: $email, password: $password, username: $username, firstname: $firstname, lastname: $lastname, }) {
+  id
+  username
+}
+}
